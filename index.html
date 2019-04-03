@@ -44,8 +44,10 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNav">
-      <div class="container">
+    <nav class="navbar navbar-expand-xl fixed-top" id="mainNav">
+        <div class="js-scroll-trigger name hide-desktop">
+          <a href="#hero">Benedict Gattas</a>
+        </div>
         <button
           class="navbar-toggler navbar-toggler-right ham-menu"
           type="button"
@@ -55,7 +57,15 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <img src="images/hamburger.svg" alt="Menu" id="hamburger" />
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+           <style type="text/css">
+             .st0{fill:#585858;}
+           </style>
+           <path class="st0" d="M5,21.9c0-4.7,3.8-8.4,8.4-8.4h73.1c4.7,0,8.4,3.8,8.4,8.4s-3.8,8.4-8.4,8.4H13.4C8.8,30.3,5,26.5,5,21.9z
+              M86.6,41.6H13.4C8.8,41.6,5,45.3,5,50s3.8,8.4,8.4,8.4h73.1c4.7,0,8.4-3.8,8.4-8.4S91.2,41.6,86.6,41.6z M86.6,69.7H13.4
+             c-4.7,0-8.4,3.8-8.4,8.4s3.8,8.4,8.4,8.4h73.1c4.7,0,8.4-3.8,8.4-8.4S91.2,69.7,86.6,69.7z"/>
+          </svg>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav">
@@ -73,21 +83,16 @@
             </li>
           </ul>
         </div>
-      </div>
     </nav>
 
     <section id="hero">
         <div class="herobox">
-          <div class="row">
-            <div class="name">
-              Benedict Gattas
+            <div class="name hide-mobile">
+              Benedict &nbsp;Gattas
             </div>
-          </div>
-          <div class="row">
             <div class="tagline">
-              Software engineering & economics student. Music Geek.
+              Software engineering & economics student. Classical music geek.
             </div>
-          </div>
         </div>
     </section>
 
@@ -102,7 +107,7 @@
           <div class="bodytxt">
             Welcome to my personal website! I put this together to practise my
             web design and HTML/CSS skills, but also present my projects and
-            experience in a way that's pleasant to read.
+            experience in an easy-to-read format.
             <br />
             <br />
             Some more about me: I'm currently finishing a dual degree in
@@ -116,14 +121,14 @@
             <br />
             <br />
             In terms of work, my recent projects have been looking at
-            applications of distributed ledger technology ("blockchain") in the
-            financial sector. I'm excited by how new technologies like this can
-            be implemented to solve complex business inefficiencies.
+            applications of distributed ledger technology (DLT) in the
+            financial sector. I'm excited by how new technologies like DLT are
+            being implemented to solve complex business inefficiencies.
             <br />
             <br />
-            My biggest passion in life though is music, and I spend much of my
-            free time practising the piano and playing in a local orchestra.
-            Reading and travelling are two of my other main hobbies.
+            My biggest passion in life though is music, and I spend a lot of my
+            free time either at my piano or playing in my local youth orchestra.
+            I'm also an avid traveller and have Irish dual citizenship.
             <br />
             <br />
             If you want to get in touch, please feel free to message me via
@@ -143,7 +148,7 @@
         <div class="row">
           <div class="col-xl-4">
             <img
-              class="img-fluid"
+              class="img-fluid project-img"
               alt="prenatal"
               src="images/wellspring_genetics_logo_vector.png"
             />
@@ -161,6 +166,81 @@
             </div>
           </div>
         </div>
+        <div class="row">
+            <div class="line-break"></div>
+        </div>
+        <div class="row flex-column-reverse flex-xl-row">
+            <div class="col-xl-8">
+              <div class="bodytxt">
+                <u>PAI-Backup-Module:</u>: A process automation bot module that completes a scheduled compression & backup service. Can be configured to send to either AWS or via HTTP to a custom server.
+                <br />
+                <br />
+                <u>Technologies Used</u>: Node.JS, Express, JavaScript ES6, AWS
+                <br />
+                <br />
+                <u>Link To Project</u>
+              </div>
+            </div>
+            <div class="col-xl-4">
+                <img
+                  class="img-fluid project-img"
+                  alt="prenatal"
+                  src="images/pai.png"
+                />
+              </div>
+          </div>
+          <div class="row">
+              <div class="line-break"></div>
+          </div>
+          <div class="row">
+              <div class="col-xl-4">
+                <img
+                  class="img-fluid project-img"
+                  alt="prenatal"
+                  src="images/operapedia.png"
+                />
+              </div>
+              <div class="col-xl-8">
+                <div class="bodytxt">
+                  <u>Operapedia</u>: A cross-platform mobile app that delivers IPA and Italian translations for arias in the standard opera repertoire. Built as part of a capstone university team project.
+                  <br />
+                  <br />
+                  <u>Technologies Used</u>: Flutter, Dart, Firebase, Adobe XD
+                  <br />
+                  <br />
+                  <u>Link To Project</u>
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="line-break"></div>
+            </div>
+            <div class="row flex-column-reverse flex-xl-row">
+                <div class="col-xl-8">
+                  <div class="bodytxt">
+                    <u>Securities Lending Cordapp</u>: A distributed ledger proof-of-concept app that lets users buy/sell securities and carry out security loans. Loans are modelled as dynamic objects with lifecycles.
+                    <br />
+                    <br />
+                    <u>Technologies Used</u>: Kotlin, Java, Corda, SQL
+                    <br />
+                    <br />
+                    <u>Link To Project</u>
+                  </div>
+                </div>
+                <div class="col-xl-4">
+                    <img
+                      class="img-fluid project-img"
+                      alt="prenatal"
+                      src="images/corda.png"
+                    />
+                </div>
+            </div>
+            <div class="row">
+                <div class="bodytxt m-auto">
+                Other projects can be found on my <a href="https://github.com/P0ntiff">Github</a>.
+                </div>
+            </div>
       </div>
     </section>
 
