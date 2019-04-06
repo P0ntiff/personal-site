@@ -69,8 +69,6 @@ li.dropdown:hover > .dropdown-menu {
 
 .container { 
     width: 95%;
-    margin-bottom: 10%;
-    padding-top: 5%;
 }
 
 .hide-mobile {
@@ -136,7 +134,7 @@ li.dropdown:hover > .dropdown-menu {
 
 
 #hero {
-    height: 60vh;
+    height: 90vh;
     background-image: url("../images/white_min.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -146,7 +144,6 @@ li.dropdown:hover > .dropdown-menu {
     -o-background-size: cover;
     background-size: cover;
     z-index: -1;
-    margin-bottom: 10%;
 }
 
 .herobox {
@@ -164,9 +161,32 @@ li.dropdown:hover > .dropdown-menu {
     text-align: center;
 }
 
+#scroll {
+    text-align: center;
+    justify-content: center;
+}
+
+#scroll svg {
+    fill: #3a3a3a;
+    width: 30px;
+    animation: scroller 1s infinite alternate;
+
+}
+
+@keyframes scroller {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(15px);
+    }
+  }
+
 #about {
     padding-left: 10%;
     padding-right: 10%;
+    margin-bottom: 10%;
+    padding-top: 5%;
 }
 
 #about h2 {
@@ -175,6 +195,8 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 #projects {
+    margin-bottom: 10%;
+    padding-top: 5%;
     background-color: #3a3a3a;
 }
 
@@ -203,6 +225,17 @@ li.dropdown:hover > .dropdown-menu {
     margin: auto;
 }
 
+#experience {
+    margin-bottom: 10%;
+    padding-top: 5%;
+}
+
+#contact {
+    margin-bottom: 10%;
+    padding-top: 5%;
+
+}
+
 
 @media only screen and (min-width: 1600px) {
     .container { 
@@ -213,11 +246,6 @@ li.dropdown:hover > .dropdown-menu {
 @media only screen and (min-width: 576px) {
     .container { 
         width: 90%;
-    }
-
-    #hero {
-        margin-top: 10%;
-        margin-bottom: 10%;
     }
 
     #mainNav {
@@ -289,10 +317,8 @@ li.dropdown:hover > .dropdown-menu {
 
     #hero {
         margin-top: 0%;
-        margin-bottom: 0%;
         height:85vh;
         background-image: url("../images/white_with_more_padding_min.png");
-        margin-bottom: 0%;
     }
 
     #hero .herobox {

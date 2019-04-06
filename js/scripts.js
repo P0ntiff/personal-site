@@ -5,3 +5,13 @@ $(window).scroll(function() {
       $("nav").removeClass("navbar-shrink");
     }
   });
+
+
+var scroller = document.getElementById("scroll");
+
+$(window).on('scroll', function() {
+    var st = $(this).scrollTop();
+    scroller.css({
+        'opacity' : 1 - st/600
+    });
+});
