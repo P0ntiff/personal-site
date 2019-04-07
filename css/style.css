@@ -31,6 +31,14 @@ a:hover {
     color: #000000;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+  }
+
+
 h1,
 h2,
 h3,
@@ -191,13 +199,16 @@ li.dropdown:hover > .dropdown-menu {
 
 #about h2 {
     padding-bottom: 15%;
-
 }
 
 #projects {
     margin-bottom: 10%;
     padding-top: 5%;
     background-color: #3a3a3a;
+}
+
+#projects h2 {
+    padding-bottom: 5%;
 }
 
 #projects h2, #projects .bodytxt, p {
@@ -230,11 +241,43 @@ li.dropdown:hover > .dropdown-menu {
     padding-top: 5%;
 }
 
-#contact {
-    margin-bottom: 10%;
-    padding-top: 5%;
 
+#experience h2 {
+    padding-bottom: 15%;
 }
+
+#experience a {
+    color: #3a3a3a;
+}
+
+#experience a:hover {
+    color : #000000;
+}
+
+#contact {
+    padding-bottom: 20%;
+    padding-top: 5%;
+    background-color: #3a3a3a;
+}
+
+
+#contact h2 {
+    padding-bottom: 15%;
+}
+
+#contact h2, #contact .bodytxt, p {
+    text-align: center;
+    color: #fefefe;
+}
+
+#contact .project-img {
+    max-height: 180px;
+    max-width: 160px;
+    display: block;
+    padding-bottom: 10%;
+    margin: auto;
+}
+
 
 
 @media only screen and (min-width: 1600px) {
