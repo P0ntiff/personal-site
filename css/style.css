@@ -238,7 +238,6 @@ li.dropdown:hover > .dropdown-menu {
 
 #experience {
     margin-bottom: 10%;
-    padding-top: 5%;
 }
 
 
@@ -255,8 +254,8 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 #contact {
-    padding-bottom: 20%;
-    padding-top: 5%;
+    padding-bottom: 15%;
+    padding-top: 10%;
     background-color: #3a3a3a;
 }
 
