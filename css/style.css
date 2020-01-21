@@ -193,12 +193,22 @@ li.dropdown:hover > .dropdown-menu {
     padding-left: 10%;
     padding-right: 10%;
     margin-bottom: 10%;
-    padding-top: 5%;
+    margin-top: 10%;
 }
 
 #about h2 {
     padding-bottom: 15%;
 }
+    /* white-space: nowrap;
+    overflow: hidden;    
+    margin: 0 auto;
+    animation: animated-text 4s steps(29,end) 1s 1 normal both;
+}
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 100%;}
+  } */
 
 #projects {
     margin-bottom: 10%;
