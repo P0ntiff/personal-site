@@ -12,6 +12,24 @@ $breakpoint arguement choices:
 
 Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
 */
+
+@font-face {
+  font-family: "Consolas Regular";
+  src: url("../fonts/CONSOLA.TTF");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gadugi Regular";
+  src: url("../fonts/gadugi.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Consolas Bold";
+  src: url("../fonts/CONSOLAB.TTF");
+  font-weight: normal;
+}
+
 *,
 *::after,
 *::before {
@@ -71,6 +89,27 @@ textarea {
     .heading-primary {
       font-size: 4.5rem; } }
 
+.herobox-name {
+  /* font-family: "Consolas Bold", sans-serif; */
+  color: #005c06;
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 4.5rem; } }
+
+.herobox-tagline {
+    /* font-family: "Consolas Regular", sans-serif; */
+    font-size: 2.2rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.6; }
+    @media only screen and (max-width: 37.5em) {
+      .text-primary {
+        font-size: 2rem; } }
+  
 .heading-sec__mb-bg {
   margin-bottom: 11rem; }
   @media only screen and (max-width: 56.25em) {
@@ -103,7 +142,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #0062b9;
+    background: #005c06;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -155,12 +194,12 @@ textarea {
     padding: 1.5rem 5rem;
     font-size: 1.6rem; }
   .btn--theme {
-    background: #0062b9;
+    background: #005c06;
     color: #fff; }
   .btn--theme-inv {
-    color: #0062b9;
+    color: #005c06;
     background: #fff;
-    border: 2px solid #0062b9;
+    border: 2px solid #005c06;
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
 
@@ -184,20 +223,25 @@ textarea {
   display: none; }
 
 .home-hero {
-  color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  /* color: #fff; */
+  /* background: linear-gradient(to right, rgba(0, 92, 6, 0.8), rgba(0, 92, 6, 0.8)), url(../../assets/svg/common-bg.svg); */
+  /* background-position: center; */
+  background-image: url("../assets/png/white_with_more_padding_min.png");
   background-position: center;
-  height: 100vh;
+  background-size: cover;
+  height:85vh;
   min-height: 80rem;
   max-height: 120rem;
   position: relative; }
   @media only screen and (max-width: 37.5em) {
     .home-hero {
       height: unset;
+      background-image: url("../assets/png/white_with_more_padding_min.png");
       min-height: unset; } }
   .home-hero__socials {
     position: absolute;
     top: 50%;
+    background-color: #005c06;
     border: 2px solid #eee;
     border-left: 2px solid #eee;
     transform: translateY(-50%); }
@@ -229,8 +273,8 @@ textarea {
   .home-hero__content {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0%;
+    transform: translate(-10%, -30%);
     max-width: 90rem;
     width: 92%; }
     @media only screen and (max-width: 37.5em) {
@@ -323,7 +367,7 @@ textarea {
           font-size: 1.7rem; } }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(0, 92, 6, 0.8), rgba(0, 92, 6, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center; }
   .contact__form-container {
@@ -404,7 +448,7 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(0, 92, 6, 0.8), rgba(0, 92, 6, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -515,14 +559,14 @@ textarea {
     color: #333;
     transition: color .3s; }
     .header__logo-container:hover {
-      color: #0062b9; }
+      color: #005c06; }
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: #0062b9; }
+    background: #005c06; }
     @media only screen and (max-width: 56.25em) {
       .header__logo-img-cont {
         width: 4.5rem;
@@ -554,7 +598,7 @@ textarea {
     font-weight: 700;
     transition: color .3s; }
     .header__link:hover {
-      color: #0062b9; }
+      color: #005c06; }
     @media only screen and (max-width: 56.25em) {
       .header__link {
         padding: 3rem 1.8rem;
@@ -601,7 +645,7 @@ textarea {
     letter-spacing: 2px;
     transition: color .3s; }
     .header__sm-menu-link a:hover {
-      color: #0062b9; }
+      color: #005c06; }
   .header__sm-menu-link:first-child a {
     border-top: 1px solid #eee; }
   .header__sm-menu-link-last {
@@ -673,10 +717,8 @@ textarea {
     color: #777; }
 
 .mouse {
-  width: 25px;
-  height: 40px;
-  border: 2px solid #eee;
-  border-radius: 60px;
+  width: 20px;
+  fill: #005c06;
   position: relative;
   overflow: hidden; }
   .mouse::before {
@@ -687,8 +729,8 @@ textarea {
     top: 7px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #eee;
-    border-radius: 50%;
+    /* background-color: #eee; */
+    /* border-radius: 50%; */
     opacity: 1;
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
