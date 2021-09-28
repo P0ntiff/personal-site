@@ -1,27 +1,30 @@
 .home-hero {
-  color: #fff;
-  background: linear-gradient(
-      to right,
-      rgba($themeClrPrimary, 0.8),
-      rgba($themeClrPrimary, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
+  // color: #fff;
+  // background: linear-gradient(
+  //     to right,
+  //     rgba($themeClrPrimary, 0.8),
+  //     rgba($themeClrPrimary, 0.8)
+  //   ),
+  //   url(../../assets/svg/common-bg.svg);
+  background-image: url("../assets/png/white_with_more_padding_min.png");
   background-position: center;
-
-  height: 100vh;
-
+  background-size: cover;
+  height: 85vh;
   min-height: 80rem;
   max-height: 120rem;
+
   position: relative;
 
   @include respond(phone) {
     height: unset;
     min-height: unset;
+    background-image: url("../assets/png/white_with_more_padding_min.png");
   }
 
   &__socials {
     position: absolute;
     top: 50%;
+    background-color: rgba($themeClrPrimary, 0.8);
     border: 2px solid #eee;
     border-left: 2px solid #eee;
     transform: translateY(-50%);
@@ -67,8 +70,8 @@
   &__content {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0%;
+    transform: translate(-10%, -30%);
     max-width: 90rem;
     width: 92%;
 

@@ -1,10 +1,23 @@
 .heading-primary {
+  color: $themeClrPrimary;
   font-size: 6rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
   @include respond(phone) {
     font-size: 4.5rem;
+  }
+}
+
+.text-primary {
+  // color: #fff;
+  font-size: 2.2rem;
+  text-align: center;
+  width: 100%;
+  line-height: 1.6;
+
+  @include respond(phone) {
+    font-size: 2rem;
   }
 }
 
@@ -129,18 +142,6 @@
   padding: 12rem 0;
   @include respond(tab-port) {
     padding: 8rem 0;
-  }
-}
-
-.text-primary {
-  color: #fff;
-  font-size: 2.2rem;
-  text-align: center;
-  width: 100%;
-  line-height: 1.6;
-
-  @include respond(phone) {
-    font-size: 2rem;
   }
 }
 
