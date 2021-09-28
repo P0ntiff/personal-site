@@ -674,24 +674,22 @@ textarea {
     font-weight: 600;
     color: #777; }
 
-.mouse {
+.scroller-holder {
   width: 20px;
-  height: 40px;
-  position: relative;
-  overflow: hidden; }
-  .mouse::before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    top: 7px;
+  height: 80px;
+  position: relative; }
+  .scroller-holder .scroller-svg {
+    fill: #005c06;
     left: 50%;
     transform: translateX(-50%);
     opacity: 1;
-    animation: wheel 1.3s infinite;
-    -webkit-animation: wheel 1.3s infinite; }
-  .mouse svg {
-    fill: #005c06; }
+    animation: scroller 1s infinite alternate; }
+
+@keyframes scroller {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(15px); } }
 
 @keyframes wheel {
   to {
