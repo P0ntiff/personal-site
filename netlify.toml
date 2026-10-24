@@ -1,0 +1,12 @@
+# Keep the portfolio on Netlify and proxy only the private scanner application.
+[[redirects]]
+  from = "/flight-scanner"
+  to = "/flight-scanner/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/flight-scanner/*"
+  to = "https://d1uncn6ldth76u.cloudfront.net/flight-scanner/:splat"
+  status = 200
+  force = true
